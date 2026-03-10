@@ -48,7 +48,7 @@ export async function loader({ request }: { request: Request }) {
   return data;
 }
 
-export default function Home() {
+export default function FilterPage() {
   const { provinces, regencies, districts } = useLoaderData<typeof loader>();
   const [searchParams, setSearchParams] = useSearchParams();
 
